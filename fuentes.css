@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('fuentes/DancingScript-VariableFont_wght.ttf') format('ttf'),
+         url('fuentes/DancingScript-VariableFont_wght.ttf') format('ttf');
+}
+
+form h2.form-title{
+    font-family: 'Dancing Script', cursive;
+    font-size:35px;
+}

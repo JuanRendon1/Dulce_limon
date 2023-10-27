@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dulce Limon</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src = 'animacion.js'></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body> 
+
+  <!-- Cabecera de la pagina web. Aquí se encuentran algunos links que nos ayudarán 
+  a navegar en la pagina web. -->
+
+<header class="cafe-header">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="imagenes/Logo_1.png" alt="Logo de la cafetería">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#about">Sobre Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#promociones">Promociones</a></li>
+      <li><a href="#contactanos">Contacto</a></li>
+      <li class="person-icon">
+        <a href="#">
+          <i class="fas fa-user"></i>
+        </a>
+        <div id="usuario" class="usuario seleccionado">
+          <i class='fas fa-user-circle'></i>
+          <button id="iniciarSesion"> <a href="login.html">Iniciar Sesion</a></button>
+          <button id="registrarse"> <a href="registrar.html">Registrarse</a></button>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Este es el hero de nuestra pagina web, esta seccion le ayudará al usuario a 
+    entender con más rapidez lo que encontrará en la pagina. -->
+
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Bienvenido a nuestra cafetería.</h1>
+    <p>Deliciosos sabores de antaño</p>
+    <a href="#menu" class="btn">Ver menú</a>
+  </div>
+</section>
+
+  <!-- Esta es una sección semantica, esta le ayudará al usuario a conocer más a fondo
+  la empresa detras de esta pagina web. -->
+
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <div class="about-content">
+      <div class="about-description">
+        <p class="about-text">
+          Somos una cafetería con pasión por brindar momentos dulces y reconfortantes. Nuestros productos artesanales y de alta calidad son cuidadosamente preparados para satisfacer los paladares más exigentes.
+        </p>
+        <p class="about-text">
+          En nuestro acogedor espacio, puedes disfrutar de una amplia variedad de pasteles, postres, panes y bebidas calientes. Cada creación está hecha con amor y atención a los detalles para ofrecerte una experiencia única.
+        </p>
+      </div>
+      <div class="about-features">
+        <div class="feature feature-left">
+          <img src="icon-cake.png" alt="Icono de Pastel">
+          <h3 class="feature-title">Pasteles Deliciosos</h3>
+          <p class="feature-description">Nuestros pasteles son elaborados con los mejores ingredientes y decorados a mano para deleitar tu paladar.</p>
+        </div>
+        <div class="feature feature-right">
+          <img src="icon-coffee.png" alt="Icono de Café">
+          <h3 class="feature-title">Café de Calidad</h3>
+          <p class="feature-description">Nuestro café se selecciona cuidadosamente y se prepara con pasión para ofrecerte una experiencia inigualable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Seccion de menu, el funcionamiento principal de la pagina web, aquí el usuario podrá encontrar 
+  los diferentes productos que la empresa tiene a la venta. -->
+
+<section id="menu" class="menu-section">
+  <div id="containerMenu" class="container">
+
+  <!-- Al usuario dar click al producto que desea comprar, esta pagina se abrirá, mostrando una pequeña
+    descripción del producto, algunas imagenes, el precio del producto y la opción de compra. -->
+
+    <div id="descripcionMenu" class="descripcionMenu">
+      <i id="botonVolver" class="material-icons" style="font-size:36px">keyboard_arrow_left</i>
+      <h2>Producto 1<h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptatem libero fuga odit minus eligendi quia assumenda modi, iusto nulla, aperiam sed veniam possimus perspiciatis beatae dolorem aliquid illum nemo.</p>
+      <button id="ComprarMenu">Compra ahora</button>
+    </div>
+    <div id="imagenProducto" class="imagenProducto">
+      <img src="Menu.imagens/Imagen1.jpg">
+      <div class="precio">
+        <h2>Precio del producto</h2>
+      </div>
+      <div class="opcionesProducto" id="opcionesProducto">
+        <i class='fas fa-star' style='font-size:36px'></i>
+        <i class="material-icons carrito" style="font-size:36px">local_grocery_store</i>
+        <i class="material-icons share" style="font-size:36px">share</i>
+      </div>
+    </div>
+
+    <!-- Esta opción solo será visible por el administrador, le servirá para ingresar productos desde la web. -->
+
+    <div class="BotonAgregar">
+      <button  id="AgregarProductos">Agregar producto</button>
+    </div>
+    <h2 class="section-title menu">Nuestro Menú</h2>
+
+    <!-- Este es nuestro contenedor de productos, aquí se mostrarás los productos de la empresa. -->
+
+    <div id="ContenedorProductos" class="container">
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+            <button id="abrirMenu1">
+              <div class="menu-item">
+                <img src="Menu.imagens/Imagen1.jpg" alt="Producto 1">
+                <h3 class="item-title">Producto 1</h3>
+                <p class="item-description">Descripción del producto 1.</p>
+                <span class="item-price">$10.000$</span>
+              </div>
+            </button>
+            <button id="abrirMenu2">
+              <div class="menu-item">
+                <img src="Menu.imagens/Imagen2.jpg" alt="Producto 2">
+                <h3 class="item-title">Producto 2</h3>
+                <p class="item-description">Descripción del producto 2.</p>
+                <span class="item-price">8.500$</span>
+              </div>
+            </button>
+            <button id="abrirMenu3">
+              <div class="menu-item">
+                <img src="Menu.imagens/Imagen3.jpg" alt="Producto 3">
+                <h3 class="item-title">Producto 3</h3>
+                <p class="item-description">Descripción del producto 3.</p>
+                <span class="item-price">12.000$</span>
+              </div>
+            </button>
+            <button id="abrirMenu4">
+              <div class="menu-item">
+                <img src="Menu.imagens/Imagen1.jpg" alt="Producto 1">
+                <h3 class="item-title">Producto 4</h3>
+                <p class="item-description">Descripción del producto 4.</p>
+                <span class="item-price">$10.000$</span>
+              </div>
+            </button>
+            <button id="abrirMenu5">
+              <div class="menu-item">
+                <img src="Menu.imagens/Imagen2.jpg" alt="Producto 2">
+                <h3 class="item-title">Producto 5</h3>
+                <p class="item-description">Descripción del producto 5.</p>
+                <span class="item-price">8.500$</span>
+              </div>
+            </button>
+            <button id="abrirMenu6">
+              <div class="menu-item">
+                <img src="Menu.imagens/Imagen3.jpg" alt="Producto 3">
+                <h3 class="item-title">Producto 6</h3>
+                <p class="item-description">Descripción del producto 6.</p>
+                <span class="item-price">12.000$</span>
+              </div>
+            </button>
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+    <div class="AgregarProdtosUi">
+      <i id="botonVolver1" class="material-icons" style="font-size:36px">keyboard_arrow_left</i>
+      <input type="text" placeholder="Nombre del producto">
+      <textarea rows="4" cols="50" placeholder="Descripción del producto"></textarea>
+    </div>
+  </div>
+</section>
+
+    <!-- Esta es la sección de promociones, esta le permitirá al usuario conocer las promociones que actualmente tienen algunos
+    productos. -->
+
+<section id ="promociones" class="promotions-section">
+  <div class="section-title">
+    <h2>Promociones</h2>
+  </div>
+  <div class="promotions-container">
+    <div class="promotion">
+      <img src="promotion1.jpg" alt="Promoción 1">
+      <h3 class="promotion-title">Promoción 1</h3>
+      <p class="promotion-description">Descripción de la promoción 1</p>
+    </div>
+    <div class="promotion">
+      <img src="promotion2.jpg" alt="Promoción 2">
+      <h3 class="promotion-title">Promoción 2</h3>
+      <p class="promotion-description">Descripción de la promoción 2</p>
+    </div>
+    <div class="promotion">
+      <img src="promotion3.jpg" alt="Promoción 3">
+      <h3 class="promotion-title">Promoción 3</h3>
+      <p class="promotion-description">Descripción de la promoción 3</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Esta es la sección de contacto, esta será de gran ayuda para que el usuario y a la empresa mantengan una comunicación. -->
+
+<section id = "contactanos" class="contact-section">
+  <div class="section-title">
+    <h2>Contáctanos</h2>
+  </div>
+  <div class="contact-info">
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Dirección de la cafetería</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <p>Teléfono de contacto</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <p>Email de contacto</p>
+    </div>
+  </div>
+</section>
+
+<!-- Esta es el footer de la pagina web. -->
+
+<footer class="footer-section">
+  <div class="footer-content">
+    <h3 class="footer-title">Gracias por visitarnos</h3>
+    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <ul class="footer-social">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-text">&copy; 2023 Dulce Limon. Todos los derechos reservados.</p>
+    <p class="footer-text">Versión numero 1.0</p>
+  </div>
+</footer>
+<script src="anima_about_us.js"></script>
+<script src="anima_promotion.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
